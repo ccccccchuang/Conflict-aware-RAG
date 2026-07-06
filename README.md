@@ -13,6 +13,6 @@ For the LLM training, we use the LLaMA-Factory framework to conduct SFT and DPO.
 We acknowledge two typographical errors in the published paper:
 
 1. HotpotQA citation. The citation for HotpotQA is incorrect. The correct reference is:  
-Yang, Z., Qi, P., Zhang, S., Bengio, Y., Cohen, W., Salakhutdinov, R., & Manning, C. D. (2018). Zhilin Yang, Peng Qi, Saizheng Zhang, Yoshua Bengio, William Cohen, Ruslan Salakhutdinov, and Christopher D. Manning. 2018. HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering. In Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing, pages 2369–2380, Brussels, Belgium. Association for Computational Linguistics.
+Zhilin Yang, Peng Qi, Saizheng Zhang, Yoshua Bengio, William Cohen, Ruslan Salakhutdinov, and Christopher D. Manning. 2018. HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering. In Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing, pages 2369–2380, Brussels, Belgium. Association for Computational Linguistics.
 
 2. Equation (13). As described in the paper ("We optimize the reranker by minimizing the KL divergence, aligning its output distribution with the LLM's conflict-aware distribution."), the reranker is trained to match the LLM distribution, so the correct objective is the forward KL divergence, i.e., **KL(Q‖P)**. This is a typographical error in the manuscript only. The implementation is correct, and all reported experimental results remain unchanged.
